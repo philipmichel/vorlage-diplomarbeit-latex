@@ -1,14 +1,4 @@
 +++++++++++++++++++++++++
-+ Software fuer Windows +
-+++++++++++++++++++++++++
-
-http://latex.tugraz.at/programme/windows
--> MikTeX (http://www.miktex.org)
--> PostScript (http://pages.cs.wisc.edu/~ghost/)
--> Editor: TeXnicCenter
-
-
-+++++++++++++++++++++++++
 + Struktur              +
 +++++++++++++++++++++++++
 

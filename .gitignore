@@ -6,3 +6,5 @@
 *.toc
 *.nlo
 *.gz
+*.blg
+*.bbl
