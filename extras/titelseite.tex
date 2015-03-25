@@ -1,51 +1,49 @@
 % Die Titelseite
 
-\newcommand{\trtitle}{Titel}
-\newcommand{\trtype}{Diplomarbeit}
+\newcommand{\trtitle}{Titel der Diplomarbeit}
 \newcommand{\trort}{Shkoder}
 \newcommand{\trbetreuer}{Titel Betreuer}
 \newcommand{\trfachgebiet}{SEW, INSY, NWTK, ...}
 \newcommand{\trdate}{\today}
+\newcommand{\trnumber}{15.xx}
+\newcommand{\trclass}{5X}
+\newcommand{\trschuelereins}{Sch\"uler1}
+\newcommand{\trschuelerzwei}{Sch\"uler2}
+\newcommand{\trschuelerdrei}{Sch\"uler3}
+\newcommand{\trsauftraggeber}{Herr Max Mustermann oder Firma}
+\newcommand{\trbetreuereins}{Lehrer1}
+\newcommand{\trbetreuerzwei}{Lehrer2}
+\newcommand{\trbetreuerdrei}{Lehrer3}
 
 \thispagestyle{empty}
 
-% Kopfzeile mit Logos.
-% Eventuell die \hspace{} 
-%\begin{tabular}{lcr}
-% \includegraphics[scale=0.8]{bildname} & % dein_unilogo.jpg/.eps im Verzeichnis "bilder" ablegen
-%  \hspace{2cm} \truni \hspace{2cm} &
- % \includegraphics[scale=0.8]{logoname} % dein_fglogo.jpg/.eps im Verzeichnis "bilder" ablegen, Fachgebietslogo
- % \\
-%\end{tabular}
-
-\rule{\textwidth}{0.4pt}
-
 \vspace{2.5cm}
-\begin{center}
-  \textbf{\LARGE \trtitle}
-\end{center}
-\vspace{2cm}
+\begin{flushleft}
+\textbf{\LARGE Diplomarbeit Nr. \trnumber} \\
+\LARGE Klasse \trclass{}, Schuljahr 2015/16
 
-\begin{center}
-  \textbf{\trtype} \\
-  am Fachgebiet \trfachgebiet \\
-  \vspace{2.5cm}
-  vorgelegt von \\
-  \textbf{Vorname Nachname}\\
-   \textbf{Vorname Nachname}\\
-    \textbf{Vorname Nachname}
-\end{center}
+\vspace{9.5cm}
+\textbf{\LARGE \trtitle}
 
-\vspace{1cm}
+\vspace{0.5cm}
+\begin{table}[htbp]
+\Large
+\begin{tabular}{cc}
+   Ausgef\"uhrt von: & \trschuelereins \\ 
+   & \trschuelerzwei \\ 
+   & \trschuelerdrei \\ 
+ \end{tabular}
+\end{table}
+\end{flushleft}
 
+\vspace{0.4cm}
+\Large Auftraggeber: \trsauftraggeber
 
-\begin{center}
-\begin{tabular}{ll}
-Betreuer: & \trbetreuer \\
-\end{tabular}
-\end{center}
+\vspace{0.4cm}
+\large Projektbetreuer1: \trbetreuereins \\
+\large Projektbetreuer2: \trbetreuerzwei \\
+\large Projektbetreuer3: \trbetreuerdrei \\
+\newline
+\large \trort{}, \today 
 
 \vfill
-
-
-\rule{\textwidth}{0.4pt}
