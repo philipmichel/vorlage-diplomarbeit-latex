@@ -37,7 +37,7 @@ InhaltA3 & InhaltB3 & InhaltC3 & InhaltD3
 Wie man in der Tabelle~\ref{tab:tabelle1} sehen kann ...
 
 % Neue Seite
-\section{Zitieren}
+\section{Zitieren und Literaturverzeichnis erzeugen}
 Zitierregeln sind der Word-Version der Diplomarbeitsvorlage zu entnehmen! \\
 In der Datei \textit{bib.bib} im Verzeichnis \textit{Literatur} sind neue Eintr\"age von Literatur hinzuzuf\"ugen. Das Format kann in der \LaTeX{} Dokumentation nachgesehen werden. \\
 N\"utzliche Links zum automatischen Erstellen von BibTeX Eintr\"agen:
@@ -47,12 +47,17 @@ N\"utzliche Links zum automatischen Erstellen von BibTeX Eintr\"agen:
 	\item \url{http://www.literatur-generator.de}
 	\item \url{https://scholar.google.de}
 \end{itemize}
-Damit das Literaturverzeichnis erstellt wird, muss auch mit dem Befehl BibTeX kompiliert werden! \\
+
+\begin{center}
+\Large{!!! \\Damit das Literaturverzeichnis erstellt wird, muss auch mit dem \textbf{Befehl BibTeX} kompiliert werden.\\ !!!}
+\end{center}
+
+
 \subsection{Beispiele}
 Die exakte Herleitung kann in \cite{Prager1961} nachgelesen werden. \\
 Hier ein Zitat etwas einger\"uckt:
 \begin{quote}
-Das Programm TeX wurde von Donald E. Knuth, Professor an der Stanford University, entwickelt. Leslie Lamport entwickelte Anfang der 1980er Jahre darauf aufbauend LaTeX, eine Sammlung von TeX-Makros. Der Name ist eine Abk\"urzung für Lamport TeX \cite{latextug}.
+Das Programm TeX wurde von Donald E. Knuth, Professor an der Stanford University, entwickelt. Leslie Lamport entwickelte Anfang der 1980er Jahre darauf aufbauend LaTeX, eine Sammlung von TeX-Makros. Der Name ist eine Abk\"urzung f\"ur Lamport TeX \cite{latextug}.
 \end{quote}
 
 \section{Bilder und Referenzen}
@@ -93,5 +98,24 @@ Siehe Beispiel \eqref{eq:1} \\
 Siehe Abschnitt \ref{sec:formeln}
 
 \section{Source Code einbinden}
-Hier eine Einbindung von Source Code, funktioniert mit allen g\"angigen Programmiersprachen:
-\lstinputlisting{./src/HelloWorld.java}
+\subsection{Datei}
+Hier eine Einbindung von Source Code in Form einer Datei (funktioniert mit allen g\"angigen Programmiersprachen):
+\lstinputlisting[label=lst:helloworldjava,caption=Hello World in Java]{./src/HelloWorld.java}
+Die Ausgabe am Bildschirm von Hello World in Java ist in \ref{lst:helloworldjava} zu sehen.
+\subsection{Inline}
+Dieser Source Code ist direkt in \LaTeX{} eingegeben:
+\begin{lstlisting}[caption=Hello World in C, label=lst:helloworldc]
+#include <stdio.h>
+
+/* Block
+ * comment */
+ 
+int main()
+{
+    // Line comment.
+    printf("Hello World\n");
+ 
+    return 0;
+}
+\end{lstlisting}
+Die Ausgabe am Bildschirm von Hello World in Java ist in \ref{lst:helloworldc} zu sehen.
