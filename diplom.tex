@@ -47,8 +47,9 @@
 \ihead{\leftmark}
 \ohead{}
 
-% Inhaltsverzeichnis, Abbildungsverzeichnis, Tabellenverzeichnis
-\input{extras/verzeichnisse}
+% Inhaltsverzeichnis
+%
+\tableofcontents
 
 % Merke mir die roemische Seitenzahl in 'roemisch' und setzte Nummerierung 
 % auf arabisch fuer die eigentlichen Kapitel
@@ -73,6 +74,22 @@
 \newpage
 \pagenumbering{Roman}
 \setcounter{page}{\value{roemisch}}
+
+%
+% Abbildungsverzeichnis
+%
+\listoffigures
+
+%
+% Tabellenverzeichnis
+%
+\listoftables
+
+%
+% Tabellenverzeichnis
+%
+\lstlistoflistings
+
 
 % Literaturverzeichnis
 \bibliographystyle{plain}
